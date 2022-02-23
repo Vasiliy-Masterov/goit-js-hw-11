@@ -30,7 +30,6 @@ body {
 
 [name='searchQuery'] {
   border-radius: 10px;
-
   padding: 10px;
   border: none;
   outline: none;
@@ -53,6 +52,7 @@ body {
   overflow: visible;
   fill: #000;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -60,6 +60,7 @@ body {
   margin-left: -30px;
   margin-bottom: 20px;
 }
+
 .photo-card {
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
@@ -83,6 +84,7 @@ body {
   height: 150px;
   object-fit: cover;
 }
+
 .info {
   display: flex;
   flex-direction: row;

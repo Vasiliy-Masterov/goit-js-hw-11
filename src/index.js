@@ -14,10 +14,6 @@ const searchQueryEl= document.querySelector('[name="searchQuery"]');
 let searchQuery = '';
 let numberPage = 1;
 const pageLimit = 5;
-/*buttonSubmitEl.innerHTML = `<svg class="search-icon">
-          <use href="./img/search.svg#icon-search">
-          </use>
-        </svg>`;*/
 
 offButtonLoadMore(buttonLoadMoreEl);
 
