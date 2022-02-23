@@ -8,11 +8,16 @@ import { onButtonLoadMore, offButtonLoadMore } from './js/buttonLoadMore';
 
 const galleryEl = document.querySelector(".gallery");
 const searchFormEl = document.querySelector(".search-form");
+//const buttonSubmitEl = document.querySelector("[type='submit']");
 const buttonLoadMoreEl = document.querySelector(".load-more");
 const searchQueryEl= document.querySelector('[name="searchQuery"]');
 let searchQuery = '';
 let numberPage = 1;
 const pageLimit = 5;
+/*buttonSubmitEl.innerHTML = `<svg class="search-icon">
+          <use href="./img/search.svg#icon-search">
+          </use>
+        </svg>`;*/
 
 offButtonLoadMore(buttonLoadMoreEl);
 
@@ -45,7 +50,7 @@ searchFormEl.addEventListener('submit', event => {
         Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
         galleryEl.insertAdjacentHTML("beforeend", createMarkupListImagies(arrayImagies));
         var lightbox = new SimpleLightbox('.gallery a', {}); 
-        
+        lightbox.refresh();
         if (totalHits > pageLimit) {onButtonLoadMore(buttonLoadMoreEl);}
         buttonLoadMoreEl.addEventListener('click', event => {
             numberPage += 1;
