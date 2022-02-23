@@ -13,7 +13,7 @@ const buttonLoadMoreEl = document.querySelector(".load-more");
 const searchQueryEl= document.querySelector('[name="searchQuery"]');
 let searchQuery = '';
 let numberPage = 1;
-const pageLimit = 5;
+const pageLimit = 40;
 
 offButtonLoadMore(buttonLoadMoreEl);
 
